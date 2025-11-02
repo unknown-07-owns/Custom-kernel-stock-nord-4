@@ -22,7 +22,7 @@ on:
         type: string
         description: "Branch name/Custom version identifier"
         required: false
-        default: "susfs-main/LuffyOP⚡"
+        default: "susfs-main/@hackervhi"
       BUILD_TIME:
         type: string
         description: "Custom build time (Enter F to use current time)"
@@ -32,7 +32,7 @@ on:
         type: string
         description: "Custom kernel suffix (leave empty for a random string)"
         required: false
-        default: "JoyBoy⚡_Kernel"
+        default: "hackervhi_Kernel"
       FAST_BUILD:
         type: boolean
         description: "Enable fast build?"
@@ -527,7 +527,7 @@ jobs:
       - name: Upload AnyKernel3
         uses: actions/upload-artifact@v4
         with:
-          name: JoyBoy⚡_Kernel_KSUN_SUSFS_${{ env.KSUVER }}_${{ steps.file_clean.outputs.value }}_LuffyOP⚡
+          name: hackervhi_Kernel_KSUN_SUSFS_${{ env.KSUVER }}_${{ steps.file_clean.outputs.value }}_@hacker_vhi
           path: ./AnyKernel3/*
 
       - name: Post-build Disk Check
